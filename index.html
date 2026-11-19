@@ -21,7 +21,7 @@ body{margin:0;background:var(--cream);color:var(--ink);font:17px/1.55 Georgia,"T
 a{color:var(--gold)}
 .wrap{max-width:760px;margin:0 auto;padding:24px 16px 48px}
 header{text-align:center;padding:8px 0 4px}
-header img{width:120px;height:120px;border-radius:50%}
+header img{width:220px;height:auto;max-width:60vw}
 h1{color:var(--deep);font-size:1.75rem;line-height:1.25;margin:12px 0 4px}
 .sub{color:var(--soft);font-style:italic;margin:0 0 4px}
 .sep{color:var(--line);text-align:center;letter-spacing:.6em;margin:14px 0}
@@ -46,10 +46,22 @@ h2{color:var(--deep);font-size:1.3rem;margin:28px 0 10px}
 .ev.main{border:2px solid var(--gold);border-left:8px solid var(--gold);background:#FFF8E8;padding:20px}
 .ev.main h3{font-size:1.5rem}
 .ev.main .badge{font-size:1rem;padding:5px 14px;background:var(--gold);color:#fff;text-transform:uppercase;letter-spacing:.04em}
+.rules details{background:var(--paper);border:1px solid var(--frame);border-radius:10px;padding:0 18px;margin-top:28px}
+.rules summary{cursor:pointer;color:var(--deep);font-size:1.25rem;font-weight:700;padding:14px 0;list-style-position:inside}
+.rules h3{color:var(--deep);font-size:1.05rem;margin:16px 0 4px}
+.rules ul{margin:0;padding-left:20px}
+.rules li{margin:4px 0}
+.rules .rules-body{padding-bottom:14px}
 .empty{font-style:italic;color:var(--soft)}
 footer{margin-top:32px;font-size:.95rem;color:var(--soft);text-align:center}
 footer p{margin:.35em 0}
-@media (max-width:480px){body{font-size:16px}h1{font-size:1.45rem}.ev{padding:14px}}
+@media (max-width:480px){body{font-size:16px}h1{font-size:1.5rem}.wrap{padding:16px 12px 40px}
+.ev,.ev.main{padding:14px}.ev h3{font-size:1.15rem}.ev.main h3{font-size:1.3rem}
+.ev table,.ev tbody,.ev tr,.ev td{display:block;width:auto}
+.ev tr{padding:5px 0;border-bottom:1px dotted var(--frame)}.ev td{border:0;padding:0}
+.ev td.t{font-size:.85rem}
+.btns{gap:6px}.btn{flex:1 1 auto;text-align:center;padding:10px 12px}
+.ev.main .badge{font-size:.85rem}}
 </style>
 <script type="application/ld+json">
 [
@@ -421,14 +433,14 @@ footer p{margin:.35em 0}
 <body>
 <div class="wrap">
 <header>
-  <img src="logo.png" alt="Budapesti Békemag logó" width="120" height="120">
+  <img src="logo.png" alt="Budapesti Békemag logó" width="220" height="220">
   <h1>Békemeditáció Budapesten</h1>
   <p class="sub">Közös, személyes meditációs esték · Budapesti Békemag</p>
 </header>
 <div class="sep">✦ ✦ ✦</div>
 <section class="intro">
   <p>A <strong>Békemeditáció minden nap</strong> közösség minden este <strong>20:22-kor</strong> együtt meditál, élőben a YouTube-on. Budapesten és környékén személyesen is összegyűlünk: együtt csendesedünk el, és együtt kapcsolódunk az esti közös meditációhoz.</p>
-  <p>Az alkalmak <strong>ingyenesek</strong>, és mindenkit szeretettel várunk, akkor is, ha még sosem meditáltál. A meditáció előtt együtt hangolódunk, ezért jó, ha <strong>20:00-ig megérkezel</strong>.</p>
+  <p>Az alkalmak <strong>ingyenesek</strong>, és mindenkit szeretettel várunk, akkor is, ha még sosem meditáltál. A meditáció előtt együtt hangolódunk, ezért jó, ha <strong>20:00-ig megérkezel</strong>. A részvétellel elfogadod a <a href="#hazirend">házirendünket</a>.</p>
 </section>
 <h2>A következő alkalmak</h2>
 
@@ -508,6 +520,12 @@ footer p{margin:.35em 0}
   <div class="btns"><a class="btn main" href="https://forms.gle/tywdMNBkizwb7P7RA" rel="noopener">Jelentkezem</a><a class="btn alt" href="https://www.facebook.com/events/2543331846156136/" rel="noopener">Facebook-esemény</a><a class="btn alt" href="https://www.google.com/maps/search/?api=1&amp;query=%C3%96nfejleszt%C5%91k%20H%C3%A1za%2C%20Zichy%20Jen%C5%91%20utca%2032.%2C%201066%20Budapest" rel="noopener">Térkép</a></div>
 </article>
 <p class="empty" id="none" style="display:none">A következő alkalmak időpontja hamarosan felkerül ide.</p>
+<section class="rules" id="hazirend">
+<details>
+  <summary>📜 Házirend</summary>
+  <div class="rules-body"><p>Kedves Béketárs! Szeretettel várunk, vallástól, világnézettől és tapasztalattól függetlenül a Mindennapi Békemeditációra. A közös csend olyan tér, amelyet együtt teremtünk és óvunk; a meditáción való részvétellel elfogadod a Házirendet.</p><h3>Megérkezés és hangolódás</h3><ul><li>Kérünk, érkezz meg a helyszínre 20:00-ig, ekkor bezárjuk az ajtót, hogy a közös hangolódás ne törjön meg. Ha késel, előre szólj a szervezőnek.</li><li>Ha előtte program vagy beszélgetés van, közben nem tudunk beengedni: kérünk, érkezz utána.</li><li>Kérünk, a meditáció alatt maradj velünk a teremben; csak sürgős esetben menj ki, a többieket nem zavarva.</li></ul><h3>Vendégként a helyszínen</h3><ul><li>A helyszínre vendégként érkezünk: a házigazda kéréseit követjük (bejutás, cipő, termek).</li><li>Ülőpárna, szék és pokróc helyszínenként eltér, melyről az esemény leírásában olvashatsz. Hozhatod a sajátodat is.</li><li>Hozhatsz egészséges finomságot, amit a meditáció előtt közösen fogyasztunk el.</li><li>A helyet úgy hagyjuk, ahogy kaptuk. Kérünk, tedd vissza, amit használtál, és takaríts el magad után.</li></ul><h3>Óvjuk a csendet</h3><ul><li>Telefonodat némítsd le (rezgés nélkül), és lehetőleg ne hozd be a meditációs térbe.</li><li>A meditáció alatt csend van: figyeljünk egymásra, és kövessük a házigazda és meditációvezető útmutatását.</li><li>Kérünk, kerüld az erős parfümöt és illatokat.</li><li>Aki zavarja a csendet, annak a szervező először csendben szól. Ha ez nem segít, kérheti, hogy távozzon.</li></ul><p>Köszönjük, hogy vigyázol a közös csendre!</p><h3>Figyeljünk magunkra</h3><ul><li>Mindenki a saját felelősségére vesz részt a programon; a gyakorlatból bármikor csendben kiléphetsz.</li><li>A közös meditáció nem terápia. Testi vagy lelki betegség esetén beszélj az orvosoddal, pszichológusoddal.</li><li>Ha beteg vagy, kérjük, maradj otthon: 20:22-kor online is velünk lehetsz.</li><li>Alkohol vagy tudatmódosító szer hatása alatt kérünk, ne gyere a meditációra.</li></ul><h3>Vigyázunk egymásra</h3><ul><li>Mindenki a saját útját járja: nem térítünk, nem adunk kéretlen tanácsot, és engedély nélkül senkihez nem érünk hozzá.</li><li>Nem árulunk, és nem hirdetünk terméket, szolgáltatást vagy politikai ügyet.</li><li>Ami a körben elhangzik, az ott is marad.</li><li>Képet vagy videót készíthetnek a szervezők az alkalomról. Ha nem szeretnél rajtuk szerepelni, szólj nekünk, és tiszteletben tartjuk.</li></ul><h3>Támogatás</h3><ul><li>Alkalmaink ingyenesek. Amennyiben támogatnád a közösséget, a helyszínen található adománydobozba megteheted. Hálásan köszönjük a hozzájárulásod!</li></ul><p>Kérdés esetén: budapestibekemag@gmail.com</p><p><a href="https://docs.google.com/document/d/1E9GZ2VYyVhncjj5yF3IB2T17JvtvYlxOyg--Jnjy2mI" rel="noopener">A házirend Google-dokumentumként</a></p></div>
+</details>
+</section>
 <footer>
   <div class="sep">✦</div>
   <p>Minden este 20:22-kor élőben: <a href="https://www.youtube.com/@Bekemeditaciomindennap" rel="noopener">Békemeditáció minden nap a YouTube-on</a></p>
